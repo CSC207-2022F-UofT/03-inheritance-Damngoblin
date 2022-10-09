@@ -111,8 +111,8 @@ public abstract class Bag {
         if (this.numberOfContents == 0) {
             return null;
         }
-        String item = this.contents[this.contents.length - 1];
-        this.contents = Arrays.copyOf(this.contents, this.contents.length - 1);
+        String item = this.contents[this.numberOfContents - 1];
+        this.contents[this.numberOfContents - 1] = null;
 
         this.numberOfContents -= 1;
         return item;
