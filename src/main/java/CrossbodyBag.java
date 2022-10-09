@@ -33,7 +33,7 @@
 public class CrossbodyBag extends Bag{
 
     private String color;
-    private Integer numberOfContents;
+    private int numberOfContents;
     private int capacity;
     private String[] contents;
     private int straps;
