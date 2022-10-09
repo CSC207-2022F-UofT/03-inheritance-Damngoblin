@@ -108,7 +108,7 @@ public abstract class Bag {
      * @return
      */
     public String popItem() {
-        if (this.numberOfContents.equals(0)) {
+        if (this.numberOfContents == 0) {
             return null;
         }
         String item = this.contents[this.contents.length - 1];
