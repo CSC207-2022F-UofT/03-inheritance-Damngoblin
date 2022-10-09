@@ -17,7 +17,7 @@ public abstract class Bag {
      */
     private String color;
     private Integer numberOfContents;
-    private Integer capacity;
+    private int capacity;
     private String[] contents;
 
 
