@@ -83,8 +83,9 @@ public abstract class Bag {
      */
     public boolean addItem(String item) {
         if (this.contents.length < this.capacity) {
-            this.contents = Arrays.copyOf(this.contents, this.contents.length + 1);
-            this.contents[this.contents.length - 1] = item;
+            String[] temp = Arrays.copyOf(this.contents, this.contents.length + 1);
+            temp[temp.length - 1] = item;
+            this.contents = temp;
             this.numberOfContents += 1;
             return true;
         }
@@ -111,7 +112,8 @@ public abstract class Bag {
             return null;
         }
         String item = this.contents[this.contents.length - 1];
-        this.contents = Arrays.copyOf(this.contents, this.contents.length - 1);
+        String[] temp = Arrays.copyOf(this.contents, this.contents.length - 1);
+        this.contents = temp;
         this.numberOfContents -= 1;
         return item;
     }
@@ -126,7 +128,8 @@ public abstract class Bag {
      */
     public void increaseCapacity(int n) {
         // TODO: Implement this method.
-        this.contents = Arrays.copyOf(this.contents, this.contents.length + n);
+        String[] temp = Arrays.copyOf(this.contents, this.contents.length + n);
+        this.contents = temp;
     }
 
     /**
