@@ -55,7 +55,7 @@ public abstract class Bag {
         return this.contents;
     }
 
-    public Integer getCapacity() {
+    public int getCapacity() {
         return this.capacity;
     }
 
