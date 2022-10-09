@@ -5,6 +5,8 @@
  * 1. Introduction to Java helpful.
  */
 
+import java.util.Arrays;
+
 public abstract class Bag {
     /*
      * TODO: Create the following private instance variables
